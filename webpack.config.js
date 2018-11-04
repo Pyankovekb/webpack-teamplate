@@ -26,7 +26,7 @@ module.exports = {
                 {
                     test: /\.(sass|scss)$/,
                     include: path.resolve(__dirname, 'src/style'),
-                    use: ['style-loader', MiniCssExtractPlugin.loader ,'css-loader', 'sass-loader'],
+                    use: ['style-loader', MiniCssExtractPlugin.loader ,'css-loader','postcss-loader', 'sass-loader'],
                 },
                 {
                     test: /\.(png|gif|jpe?g)$/,
